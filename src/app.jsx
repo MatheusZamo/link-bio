@@ -9,7 +9,9 @@ import { SiPrisma } from "react-icons/si"
 import { BiLogoPostgresql } from "react-icons/bi"
 import { FaGithub } from "react-icons/fa"
 import { LuMonitorSmartphone } from "react-icons/lu"
-import { RxGlobe } from "react-icons/rx"
+import { MdEmail } from "react-icons/md"
+import { FaInstagram } from "react-icons/fa"
+import { CiLinkedin } from "react-icons/ci"
 
 const App = () => {
   return (
@@ -34,37 +36,37 @@ const App = () => {
         {/* WIDGET 2: Informações CTA  */}
         <div className="widget2">
           <div className="skills">
-            <span className="title-skills">Trabalhando com...</span>
+            <span className="title-skills">Hard Skills</span>
             <ul>
               <li>
-                <FaHtml5 className="skills-icons" />
+                <FaHtml5 className="skills-icons html" />
               </li>
               <li>
-                <FaCss3Alt className="skills-icons" />
+                <FaCss3Alt className="skills-icons css" />
               </li>
               <li>
-                <FaBootstrap className="skills-icons" />
+                <FaBootstrap className="skills-icons bootstrap" />
               </li>
               <li>
-                <RiTailwindCssFill className="skills-icons" />
+                <RiTailwindCssFill className="skills-icons tailwind" />
               </li>
               <li>
-                <FaReact className="skills-icons" />
+                <FaReact className="skills-icons react" />
               </li>
               <li>
-                <RiNextjsFill className="skills-icons" />
+                <RiNextjsFill className="skills-icons next" />
               </li>
               <li>
-                <SiTypescript className="skills-icons" />
+                <SiTypescript className="skills-icons typescript" />
               </li>
               <li>
-                <SiPrisma className="skills-icons" />
+                <SiPrisma className="skills-icons prisma" />
               </li>
               <li>
-                <BiLogoPostgresql className="skills-icons" />
+                <BiLogoPostgresql className="skills-icons postgresql" />
               </li>
               <li>
-                <FaGithub className="skills-icons" />
+                <FaGithub className="skills-icons git" />
               </li>
             </ul>
           </div>
@@ -77,69 +79,59 @@ const App = () => {
               <h1>Meu Site</h1>
               <span>Portfolio</span>
             </div>
-            {/* <LuMonitorSmartphone className="img-site" /> */}
-            <RxGlobe className="img-site" />
+            <i>
+              <LuMonitorSmartphone className="img-site" />
+            </i>
           </a>
 
           {/* Redes sociais  */}
           <div className="redes-sociais">
             <a
               className="box-social youtube"
-              href="https://www.youtube.com"
+              href="https://www.linkedin.com/in/matheuszamo/"
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fab fa-youtube"></i>
+              <CiLinkedin className="linkedin" />
             </a>
             <a
               className="box-social instagram"
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/matheus.zamo/"
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fab fa-instagram"></i>
+              <FaInstagram className="instagram" />
             </a>
             <a
-              className="box-social spotify"
-              href="https://spotify.com"
+              className="box-social"
+              href="https://github.com/MatheusZamo"
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fab fa-spotify"></i>
+              <FaGithub className="github" />
             </a>
             <a
               className="box-social mail"
-              href="mailto:seuemail@email.com"
+              href="mailto:19matheushenrique03@gmail.com"
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fas fa-envelope"></i>
+              <MdEmail className="email" />
             </a>
           </div>
         </div>
 
-        {/* WIDGET 4: Call to action adicional  */}
+        {/* WIDGET 4: Call to action adicional 
         <div className="widget4">
           <a href="#" className="cta" target="_blank">
             <i className="fas fa-calendar-alt"></i>
             <h1>Lorem ipsum dolor sit amet.</h1>
           </a>
-        </div>
+        </div> */}
 
         {/* WIDGET 5: Embeds do Spotify  */}
         <div className="widget5">
           <span>Estou escutando...</span>
-
-          <iframe
-            title="deezer-widget"
-            src="https://widget.deezer.com/widget/dark/track/602456552"
-            width="100%"
-            height="140"
-            frameborder="0"
-            allowtransparency="true"
-            allow="autoplay; clipboard-write"
-            loading="lazy"
-          ></iframe>
           <iframe
             title="deezer-widget"
             src="https://widget.deezer.com/widget/dark/track/137726987"
@@ -152,13 +144,21 @@ const App = () => {
           ></iframe>
           <iframe
             title="deezer-widget"
-            src="https://widget.deezer.com/widget/dark/track/3016378181"
+            src="https://widget.deezer.com/widget/dark/track/140640895"
             width="100%"
             height="140"
             frameborder="0"
             allowtransparency="true"
-            allow="autoplay; clipboard-write"
-            loading="lazy"
+            allow="encrypted-media; clipboard-write"
+          ></iframe>
+          <iframe
+            title="deezer-widget"
+            src="https://widget.deezer.com/widget/dark/track/447035072"
+            width="100%"
+            height="140"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media; clipboard-write"
           ></iframe>
         </div>
       </div>

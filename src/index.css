@@ -148,6 +148,44 @@ ul {
   height: 25px;
 }
 
+.html:hover {
+  color: rgb(238, 18, 18);
+}
+
+.css:hover {
+  color: rgb(18, 113, 238);
+}
+.bootstrap:hover {
+  color: rgb(133, 53, 238);
+}
+
+.tailwind:hover {
+  color: rgb(18, 113, 238);
+}
+
+.react:hover {
+  color: rgb(18, 223, 238);
+}
+
+.next:hover {
+  color: rgb(48, 49, 49);
+}
+
+.typescript:hover {
+  color: rgb(18, 113, 238);
+}
+
+.prisma:hover {
+  color: rgb(3, 47, 104);
+}
+
+.postgresql:hover {
+  color: rgb(98, 161, 243);
+}
+
+.git:hover {
+  color: rgb(71, 71, 71);
+}
 /* WIDGET 3: Redes sociais e link do site */
 .widget3 {
   height: 100%;
@@ -233,22 +271,42 @@ ul {
   color: var(--color-white);
 }
 
-.redes-sociais .youtube:hover i {
-  color: #ff0000;
+.linkedin {
+  color: var(--color-white);
+  font-size: 2.8rem;
+}
+
+.redes-sociais .linkedin:hover {
+  color: rgb(22, 113, 233);
   transition: color 0.3s;
 }
 
-.redes-sociais .instagram:hover i {
+.instagram {
+  color: var(--color-white);
+  font-size: 2.8rem;
+}
+
+.redes-sociais .instagram:hover {
   color: #e1306c;
   transition: color 0.3s;
 }
 
-.redes-sociais .spotify:hover i {
-  color: #4add06;
+.github {
+  color: var(--color-white);
+  font-size: 2.8rem;
+}
+
+.redes-sociais .github:hover {
+  color: rgb(25, 26, 25);
   transition: color 0.3s;
 }
 
-.redes-sociais .mail:hover i {
+.email {
+  color: var(--color-white);
+  font-size: 2.8rem;
+}
+
+.redes-sociais .email:hover {
   color: #808080;
   transition: color 0.3s;
 }
