@@ -12,6 +12,8 @@ import { LuMonitorSmartphone } from "react-icons/lu"
 import { MdEmail } from "react-icons/md"
 import { FaInstagram } from "react-icons/fa"
 import { CiLinkedin } from "react-icons/ci"
+import DecryptedText from "./animation-text/decrypted-text"
+import RotatingText from "./animation-text/rotating-text"
 
 const App = () => {
   return (
@@ -24,15 +26,37 @@ const App = () => {
               <img src="my.jpeg" alt="Imagem do usuário" />
             </div>
             <div className="name-user">
-              <h1>Matheus Henrique</h1>
-              <span>Desenvolvedor Freelancer</span>
+              <div className="name-user-title">
+                <DecryptedText
+                  text="Matheus Henrique"
+                  animateOn="view"
+                  revealDirection="start"
+                />
+              </div>
+              <div className="dev">
+                <span className="name-user-sub">Desenvolvedor </span>
+                <RotatingText
+                  texts={["  Freelancer", "  Full-Stack", "  Web"]}
+                  mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                  staggerFrom={"first"}
+                  initial={{ y: "100%", opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  animatePresenceMode={"wait"}
+                  animatePresenceInitial={false}
+                  exit={{ y: "-120%", opacity: 0 }}
+                  staggerDuration={0.025}
+                  splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                  rotationInterval={2000}
+                  elementLevelClassName="text-rotating"
+                />
+              </div>
             </div>
           </div>
           <div className="info-icon">
             <img src="smile-icon.png" alt="Ícone complementar" />
           </div>
         </div>
-
         {/* WIDGET 2: Informações CTA  */}
         <div className="widget2">
           <div className="skills">
@@ -71,7 +95,6 @@ const App = () => {
             </ul>
           </div>
         </div>
-
         {/* WIDGET 3: Redes sociais e link do site  */}
         <div className="widget3">
           <a href="#" target="_blank" className="site">
@@ -120,7 +143,6 @@ const App = () => {
             </a>
           </div>
         </div>
-
         {/* WIDGET 4: Call to action adicional 
         <div className="widget4">
           <a href="#" className="cta" target="_blank">
@@ -128,7 +150,6 @@ const App = () => {
             <h1>Lorem ipsum dolor sit amet.</h1>
           </a>
         </div> */}
-
         {/* WIDGET 5: Embeds do Spotify  */}
         <div className="widget5">
           <span>Estou escutando...</span>
@@ -167,27 +188,3 @@ const App = () => {
 }
 
 export { App }
-
-// <!DOCTYPE html>
-// <html lang="pt-br">
-
-// <head>
-//     <meta charset="UTF-8">
-//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//     <title>TITULO</title>
-
-//     <!-- Estilos externos -->
-//     <link rel="stylesheet" href="css/styles.css">
-//     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-//     <!-- Favicon -->
-//     <link rel="icon" type="image/x-icon" href="#">
-// </head>
-
-// <body>
-
-//     <!-- Container principal -->
-
-// </body>
-
-// </html>
