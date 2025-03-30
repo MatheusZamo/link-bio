@@ -103,7 +103,8 @@ const App = () => {
               <span>Portfolio</span>
             </div>
             <i>
-              <LuMonitorSmartphone className="img-site" />
+              <img src="web-white-icon.png" alt="" className="img-site" />
+              {/* <LuMonitorSmartphone className="img-site" /> */}
             </i>
           </a>
 
