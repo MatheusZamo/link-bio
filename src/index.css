@@ -381,6 +381,14 @@ ul {
   height: 60px;
 }
 
+.hide-musics {
+  position: absolute;
+}
+
+.show-musics {
+  position: relative;
+}
+
 .widget1:hover,
 .widget2:hover,
 .site:hover,

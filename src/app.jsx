@@ -1,3 +1,6 @@
+import { useState, useEffect } from "react"
+import { Triangle } from "react-loader-spinner"
+
 import { FaHtml5 } from "react-icons/fa"
 import { FaCss3Alt } from "react-icons/fa"
 import { FaBootstrap } from "react-icons/fa"
@@ -16,6 +19,14 @@ import DecryptedText from "./animation-text/decrypted-text"
 import RotatingText from "./animation-text/rotating-text"
 
 const App = () => {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(!loading)
+    }, 3000)
+  }, [])
+
   return (
     <div className="container">
       <div className="content">
@@ -154,34 +165,53 @@ const App = () => {
         {/* WIDGET 5: Embeds do Spotify  */}
         <div className="widget5">
           <span>Estou escutando...</span>
-          <iframe
-            title="deezer-widget"
-            src="https://widget.deezer.com/widget/dark/track/137726987"
-            width="100%"
-            height="140"
-            frameborder="0"
-            allowtransparency="true"
-            allow="autoplay; clipboard-write "
-            loading="lazy"
-          ></iframe>
-          <iframe
-            title="deezer-widget"
-            src="https://widget.deezer.com/widget/dark/track/140640895"
-            width="100%"
-            height="140"
-            frameborder="0"
-            allowtransparency="true"
-            allow="encrypted-media; clipboard-write"
-          ></iframe>
-          <iframe
-            title="deezer-widget"
-            src="https://widget.deezer.com/widget/dark/track/447035072"
-            width="100%"
-            height="140"
-            frameborder="0"
-            allowtransparency="true"
-            allow="encrypted-media; clipboard-write"
-          ></iframe>
+
+          <Triangle
+            visible={loading}
+            height="80"
+            width="80"
+            color="#016cfe"
+            ariaLabel="triangle-loading"
+          />
+          <div
+            style={{
+              position: loading ? "hide-musics" : "show-musics",
+              left: loading ? "-9999px" : "0",
+              visibility: loading ? "hidden" : "visible",
+              transition: "visibility 0s linear 0.3s, left 0s",
+            }}
+          >
+            <iframe
+              title="deezer-widget"
+              src="https://widget.deezer.com/widget/dark/track/137726987"
+              width="100%"
+              height="140"
+              frameborder="0"
+              allowtransparency="true"
+              allow="autoplay; clipboard-write "
+              loading="lazy"
+            ></iframe>
+            <iframe
+              title="deezer-widget"
+              src="https://widget.deezer.com/widget/dark/track/140640895"
+              width="100%"
+              height="140"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media; clipboard-write"
+              loading="lazy"
+            ></iframe>
+            <iframe
+              title="deezer-widget"
+              src="https://widget.deezer.com/widget/dark/track/447035072"
+              width="100%"
+              height="140"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media; clipboard-write"
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
