@@ -108,7 +108,7 @@ const App = () => {
         </div> */}
         {/* WIDGET 3: Redes sociais e link do site  */}
         <div className="widget3">
-          <a href="#" target="_blank" className="site">
+          <a href="https://www.mhdeveloper.com.br/" className="site">
             <div className="text-site">
               <h1>Meu Site</h1>
               <span>Portfolio</span>
