@@ -242,7 +242,7 @@ ul {
 }
 
 .img-site img {
-  width: 50%;
+  width: 30%;
 }
 
 /* Redes sociais */
@@ -461,4 +461,9 @@ ul {
 
 .text-rotate-space {
   white-space: pre;
+}
+
+.musics {
+  margin-top: 10px;
+  border: none;
 }

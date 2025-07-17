@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react"
 import { Triangle } from "react-loader-spinner"
 
-import { FaHtml5 } from "react-icons/fa"
-import { FaCss3Alt } from "react-icons/fa"
-import { FaBootstrap } from "react-icons/fa"
-import { RiTailwindCssFill } from "react-icons/ri"
-import { FaReact } from "react-icons/fa"
-import { RiNextjsFill } from "react-icons/ri"
-import { SiTypescript } from "react-icons/si"
-import { SiPrisma } from "react-icons/si"
-import { BiLogoPostgresql } from "react-icons/bi"
+// import { FaHtml5 } from "react-icons/fa"
+// import { FaCss3Alt } from "react-icons/fa"
+// import { FaBootstrap } from "react-icons/fa"
+// import { RiTailwindCssFill } from "react-icons/ri"
+// import { FaReact } from "react-icons/fa"
+// import { RiNextjsFill } from "react-icons/ri"
+// import { SiTypescript } from "react-icons/si"
+// import { SiPrisma } from "react-icons/si"
+// import { BiLogoPostgresql } from "react-icons/bi"
 import { FaGithub } from "react-icons/fa"
-import { LuMonitorSmartphone } from "react-icons/lu"
+
 import { MdEmail } from "react-icons/md"
 import { FaInstagram } from "react-icons/fa"
 import { CiLinkedin } from "react-icons/ci"
@@ -69,7 +69,7 @@ const App = () => {
           </div>
         </div>
         {/* WIDGET 2: Informações CTA  */}
-        <div className="widget2">
+        {/* <div className="widget2">
           <div className="skills">
             <span className="title-skills">Hard Skills</span>
             <ul>
@@ -105,7 +105,7 @@ const App = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
         {/* WIDGET 3: Redes sociais e link do site  */}
         <div className="widget3">
           <a href="#" target="_blank" className="site">
@@ -186,30 +186,27 @@ const App = () => {
               src="https://widget.deezer.com/widget/dark/track/137726987"
               width="100%"
               height="140"
-              frameborder="0"
-              allowtransparency="true"
               allow="autoplay; clipboard-write "
               loading="lazy"
+              className="musics"
             ></iframe>
             <iframe
               title="deezer-widget"
               src="https://widget.deezer.com/widget/dark/track/140640895"
               width="100%"
               height="140"
-              frameborder="0"
-              allowtransparency="true"
               allow="encrypted-media; clipboard-write"
               loading="lazy"
+              className="musics"
             ></iframe>
             <iframe
               title="deezer-widget"
               src="https://widget.deezer.com/widget/dark/track/447035072"
               width="100%"
               height="140"
-              frameborder="0"
-              allowtransparency="true"
               allow="encrypted-media; clipboard-write"
               loading="lazy"
+              className="musics"
             ></iframe>
           </div>
         </div>
